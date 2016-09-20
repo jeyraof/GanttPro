@@ -1,0 +1,30 @@
+{
+  "name": "GanttPro",
+  "version": "0.1.0",
+  "description": "GanttPro cross-platform app wrapped by Electron",
+  "keywords": ["GanttPro", "Gantt"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeyraof/GanttPro.git"
+  },
+  "author": {
+    "name": "Jaeyoung Lee",
+    "email": "jaeyoung@monodiary.net"
+  },
+  "main": "main.js",
+  "bin": {
+    "ganttpro": "./start.js"
+  },
+  "scripts": {
+    "start": "./start.js",
+    "build": "rm -rf dist; mkdir dist; ./build-all $npm_package_name $npm_package_version",
+    "test": "rm -rf dist; mkdir dist; ./build-all $npm_package_name $npm_package_version"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.0.0",
+    "electron-prebuilt": "^1.4.0"
+  },
+  "dependencies": {
+    "configstore": "^2.1.0"
+  }
+}
